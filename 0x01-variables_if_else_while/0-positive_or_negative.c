@@ -3,13 +3,12 @@
 /* more headers goes there */
 #include <stdio.h>
 
-/** 
- * main function it print if a number equal zero, positive
- * or negative
+/**
+ * main - is the main function
  *
- * it return 0 if the process succed
+ * Description : print positive or negative
  *
- * */
+ * return : 0 (success)*/
 int main(void)
 {
 	int n;
