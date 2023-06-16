@@ -6,9 +6,10 @@
 /**
  * main - is the main function
  *
- * Description : print positive or negative
+ * Description: print if a number is positive or negative
  *
- * return : 0 (success)*/
+ * Return: 0 (success)
+*/
 int main(void)
 {
 	int n;
@@ -20,13 +21,13 @@ int main(void)
 	{
 		printf("%d is positive\n", n);
 	}
-	else if (n < 0)
-	{
-		printf("%d is negative\n", n);
-	}
-	else 
+	else if (n == 0)
 	{
 		printf("%d is zero\n", n);
+	}
+	else
+	{
+		printf("%d is negative\n", n);
 	}
 	return (0);
 }
