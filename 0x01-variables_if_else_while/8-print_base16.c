@@ -23,7 +23,7 @@ int main(void)
 	while (num2 <= 102)
 	{
 		putchar(num2);
-		num2++
+		num2++;
 	}
 	putchar('\n');
 
