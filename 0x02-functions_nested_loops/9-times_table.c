@@ -19,10 +19,11 @@ void times_table(void)
 		_putchar(48);
 		for (j = 0; j <= 9; j++)
 		{
-			res = i * j;
 
 			_putchar(44);
 			_putchar(32);
+			
+			res = i * j;
 
 			if (res <= 9)
 			{
