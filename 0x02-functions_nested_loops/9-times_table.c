@@ -25,7 +25,7 @@ void times_table(void)
 
 			if (res <= 9)
 			{
-				_putchar((32);
+				_putchar(32);
 			}
 			else
 			{
