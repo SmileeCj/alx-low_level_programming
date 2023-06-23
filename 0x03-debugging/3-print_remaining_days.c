@@ -7,6 +7,7 @@
 * @month: month in number format
 * @day: day of month
 * @year: year
+* leap year when it can be divided to 100 , 400 , and by 4
 * Return: void
 */
 
