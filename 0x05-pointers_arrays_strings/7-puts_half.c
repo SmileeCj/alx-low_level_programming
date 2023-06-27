@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * puts_half( - print character
+ * puts_half - print character
  * @str: function parameter
  * Return: nothing
  */
