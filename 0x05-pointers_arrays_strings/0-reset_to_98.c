@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - update the value that it point to with the input
- * @a: function parameter
+ * @n: function parameter
  * Return: Nothing
  */
 
