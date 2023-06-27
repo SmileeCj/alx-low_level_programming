@@ -12,10 +12,8 @@ void rev_string(char *s)
 	int j;
 	char swap;
 
-	for (i = 0;s[i] != '\0'; i++)
-	{
+	for (i = 0; s[i] != '\0'; i++)
 		;
-	}
 	for (j = 0; j < 1 / 2; j++)
 	{
 		swap = s[j];
