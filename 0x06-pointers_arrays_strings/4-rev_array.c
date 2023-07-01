@@ -1,26 +1,20 @@
 #include "main.h"
 
 /**
- * reverse_array - reverse an array content
- * @a: function parameter one
- * @n: swaped elements
- * Return: nothing
+ * _strcmp - copies a string
+ * @s1: function parameter one
+ * @s2: function parameter two
+ * Return: 1 if true 0 if false
  */
 
-void reverse_array(int *a, int n)
+int _strcmp(char *s1, char *s2)
 {
 	int i, j, k;
 
-	i = 0;
-	j = (n - 1);
-
-	do {
+	for (i = 0; j = (n - 1); i < j; i++, j--)
+	{
 		k = a[i];
 		a[i] = a[j];
 		a[j] = k;
-
-		i++;
-		j--;
-
-	} while (i < j);
+	}
 }
