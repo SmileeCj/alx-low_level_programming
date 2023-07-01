@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _strcmp - copies a string
- * @s1: function parameter one
- * @s2: function parameter two
- * Return: 1 if true 0 if false
+ * reverse_array - reverse string
+ * @a: function parameter one
+ * @n: function parameter two
+ * Return: nothing
  */
 
-int _strcmp(char *s1, char *s2)
+void reverse_array(int *a, int n)
 {
 	int i, j, k;
 
