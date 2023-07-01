@@ -5,26 +5,22 @@
  * @dest: function parameter one
  * @src: function parameter two
  * @n: number of bytes from src
- * Return: pointer to `dest`
+ * Return: @dest
  */
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i;
+	int a;
 
-	i = 0;
-
-	while (i < n && src[i] != '\0')
+	for (a = 0; a < n && src[a] != '\0'; a++)
 	{
 		dest[i] = src[i];
-		i++;
 	}
 
-	while (i < n)
+	while (a < n)
 	{
-		dest[i] = '\0';
-		i++
+		dest[a] = '\0';
+		a++
 	}
-
 	return (dest);
 }
