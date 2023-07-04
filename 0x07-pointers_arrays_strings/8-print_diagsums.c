@@ -19,6 +19,7 @@ void print_diagsums(int *a, int size)
 		n1 += a[i];
 		n2 += a[size - i - 1];
 		a += size;
+		i++;
 	}
 
 	printf("%d, ", n1);
