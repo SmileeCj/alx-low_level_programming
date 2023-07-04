@@ -18,9 +18,7 @@ char *_strstr(char *haystack, char *needle)
 		for (; *ptr1 == *ptr2 && *ptr2 != '\0'; ptr1++, ptr2++)
 			;
 		if (*ptr2 == '\0')
-		{
 			return (haystack);
-		{
 	}
 	return (0);
 }
