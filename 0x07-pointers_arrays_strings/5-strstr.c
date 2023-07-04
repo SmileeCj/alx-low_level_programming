@@ -14,8 +14,8 @@ char *_strstr(char *haystack, char *needle)
 	{
 		char *ptr1 = haystack;
 		char *ptr2 = needle;
-		
-		for (; *ptr1 == *ptr2 && *ptr2 != '\0'; ptr1++,ptr2++)
+
+		for (; *ptr1 == *ptr2 && *ptr2 != '\0'; ptr1++, ptr2++)
 			;
 		return (haystack);
 	}
