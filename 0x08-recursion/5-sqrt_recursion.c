@@ -34,4 +34,6 @@ int sqr(int n, int i)
 	{
 		return (sr(n, i + 1));
 	}
+	else
+		return (-1);
 }
