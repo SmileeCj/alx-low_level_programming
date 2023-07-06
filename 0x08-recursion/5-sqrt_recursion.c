@@ -1,4 +1,5 @@
 #include "main.h"i
+#include <stdio.h>
 
 int sqr(int n, int i);
 
