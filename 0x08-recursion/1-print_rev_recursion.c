@@ -15,6 +15,6 @@ void _print_rev_recursion(char *s)
 	}
 	else
 	{
-		return(0);
+		return;
 	}
 }
