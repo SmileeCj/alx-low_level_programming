@@ -25,5 +25,4 @@ int main(int argc, char *argv[])
 		printf("there is an Error\n");
 		return (1);
 	}
-	return (0);
 }
