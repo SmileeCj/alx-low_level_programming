@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "nain.h"
+#include "main.h"
+
 /**
  * main - Write a program that multiplies two numbers.
  * @argc: int
@@ -22,8 +23,8 @@ int main(int argc, char *argv[])
 	{I	
 		i = atoi(argv[1]);
 		j = atoi(argv[2]);
-		
-		printf("%d\n", (i * j));
+
+		printf("%d\n", i * j);
 	}
 	return (0);
 }
