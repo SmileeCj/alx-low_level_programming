@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	if (argc < 3)
 	{
 		printf("there is an Error\n");
-		return (0);
+		return (1);
 	}
 	else
 	{
