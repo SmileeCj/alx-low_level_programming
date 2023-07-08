@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main - Write a program that multiplies two numbers.
  * @argc: int
