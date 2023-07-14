@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "main.h"
 
 /**
  * *string_nconcat - function that prints a reversed string
@@ -48,6 +49,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		c[i] = s2[j];
 		i++;
 	}
-	str[i] = '\0';
+	c[i] = '\0';
 	return (c);
 }
