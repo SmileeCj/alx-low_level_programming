@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+
 /**
  * *string_nconcat - function that prints a reversed string
  * @s1: pointer1
@@ -12,8 +13,10 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *c;
-	unsigned int i = 0, unsigned int j = 0;
-	unsigned int ln1 = 0, unsigned int ln2 = 0;
+	unsigned int i = 0;
+	unsigned int j = 0;
+	unsigned int ln1 = 0;
+	unsigned int ln2 = 0;
 
 	if (s1 == NULL)
 	{
