@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * *string_nconcat - function that prints a reversed string
  * @s1: pointer1
