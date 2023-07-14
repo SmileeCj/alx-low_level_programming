@@ -42,13 +42,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	for (; s1[i] != '\0'; i++)
 	{
-		str[i] = s1[i];
+		c[i] = s1[i];
 	}
 	for (; j < n; j++)
 	{
-		str[i] = s2[j];
+		c[i] = s2[j];
 		i++;
 	}
 	str[i] = '\0';
-	return (str);
+	return (c);
 }
