@@ -7,7 +7,7 @@
  * @age: dog's age
  * @owner: dog owner's name
  *
- * Description: Define a new type struct dog contain it's name , age and owner
+ * Description: Define a nstruct dog contain it's name , age and owner
  */
 
 struct dog
@@ -15,6 +15,6 @@ struct dog
 	char *name;
 	float age;
 	char *owner;
-}
+};
 
 #endif
