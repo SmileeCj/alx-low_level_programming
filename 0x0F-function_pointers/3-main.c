@@ -32,7 +32,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		printf("Error\n");
 		exit(100);
 	}
-	
+
 	result = get_op_func(op_funct)(a, b);
 	printf("%d\n", result);
 
