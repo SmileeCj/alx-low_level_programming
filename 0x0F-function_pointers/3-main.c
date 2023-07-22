@@ -11,16 +11,18 @@
  */
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
-	int a, b;
+	int a, b, result;
 	char *op_funct;
 
 	if (argc != 4)
-		printf("Error\n"), exit(98);
+	{
+		printf("Error\n");
+		exit(98);
+	}
 
 	a = atoi(argv[1]);
-	b = atoi(argv[3]);
-
 	op_funct = argv[2];
+	b = atoi(argv[3]);
 
 	if (get_op_func(op_funct) == NULL || op_funct[1] != '\0')
 		printf("Error\n"), exit(99);
@@ -30,8 +32,9 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		printf("Error\n");
 		exit(100);
 	}
-
-	printf("%d\n", get_op_func(op_funct)(a, b));
+	
+	result = get_op_func(op_funct)(a, b);
+	printf("%d\n", result);
 
 	return (0);
 }
