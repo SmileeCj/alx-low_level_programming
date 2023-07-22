@@ -17,8 +17,8 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	if (argc != 4)
 		printf("Error\n"), exit(98);
 
-	n1 = atoi(argv[1]);
-	n2 = atoi(argv[3]);
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
 
 	op_funct = argv[2];
 
