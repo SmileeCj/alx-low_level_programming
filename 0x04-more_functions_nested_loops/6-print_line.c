@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *	print_line - func draws a straight line in the terminal
- *	@n: is an int parameter
- *	Return:nothing
+ * print_line - func draws a straight line in the terminal
+ * @n: is an int parameter
+ * Return:nothing
  */
 
 void print_line(int n)
