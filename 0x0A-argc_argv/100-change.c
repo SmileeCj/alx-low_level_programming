@@ -19,7 +19,7 @@ int isDigit(char **p)
 		{
 			if (!(p[1][i] >= '0' && p[1][i] <= '9'))
 			{
-				printf("not digits\n");
+				printf("Error\n");
 				return (1);
 			}
 		}
@@ -30,6 +30,7 @@ int isDigit(char **p)
 		{
 			if (!(p[1][j] >= '0' && p[1][j] <= '9'))
 			{
+				printf("Error\n");
 				return (1);
 			}
 		}
