@@ -50,7 +50,7 @@ int isDigit(char **p)
 int main(int argc, char *argv[])
 {
 	int chan[] = {25, 10, 5, 2, 1};
-	int i = 0, count = 0, length = sizeof(chan) / sizeof(chan[0]);
+	int i = 0, count = 0, length = 5;
 	static int c;
 
 	if (argc != 2)
@@ -72,9 +72,8 @@ int main(int argc, char *argv[])
 			if (c < 0)
 			{
 				printf("%d\n", 0);
+				return (0);
 			}
-
-			i = 0;
 
 			while (c)
 			{
