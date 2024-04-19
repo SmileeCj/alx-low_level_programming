@@ -23,6 +23,7 @@ int isDigit(char **p)
 				return (1);
 			}
 		}
+		return (0);
 	}
 	else
 	{
