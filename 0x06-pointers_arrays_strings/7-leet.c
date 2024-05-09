@@ -9,22 +9,24 @@
 
 char *leet(char *c)
 {
-	int *a = c;
-	char k[] = {'A', 'E', 'O', 'T', 'L'};
-	int num[] = {4, 3, 0, 7, 1};
-	int i;
-	int size = sizeof(k);
+	char alf[] = "AEOTLaeotl";
+	char num[] = "4307143071";
+	int i = 0, j;
+	char *p = c;
 
-	while (*c)
+	for (; c[i] != '\0'; i++)
 	{
-		for (i = 0; i < size / sizeof(char); i++)
+		for (j = 0; alf[j] != '\0'; j++)
 		{
-			if (*c == k[i] || *c == k[i] + 32)
+			if (alf[j] == c[i])
 			{
-				*c = 49 + num[i];
+				p[i] = num[j];
+				break;
 			}
+				p[i] = c[i];
 		}
-		return (c++);
 	}
-	return (a);
+	p[i + 1] = '\0';
+
+	return (p);
 }
