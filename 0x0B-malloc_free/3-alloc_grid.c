@@ -4,7 +4,7 @@
 #include "main.h"
 
 /**
-* alloc_grid - concat two strings
+* alloc_grid - allcation of memory for 2D ARR
 * @width: int
 * @height: int
 * Description: creates a 2D array
@@ -13,19 +13,26 @@
 
 int **alloc_grid(int width, int height)
 {
-	int i;
+	int j,i;
 	int **p;
 
 	if (width == 0 || height == 0)
 		return (NULL);
 
-	p = (int **)calloc(height, sizeof(int *));
+	p = (int **)malloc(height * sizeof(int *));
 
 	if (p == NULL)
 		return (NULL);
 
 	for (i = 0; i < height; i++)
-		p[i] = (int *)calloc(width, sizeof(int));
+		p[i] = (int *)malloc(width * sizeof(int));
 
+	for (i = 0; i < height; i++)
+	{
+		for(j = 0; j < width; j++)
+		{
+			p[i][j] = 0;
+		}
+	}
 	return (p);
 }
