@@ -63,7 +63,7 @@ void if_digit(char *p)
 
 	for (i = 0; p[i] != '\0'; i++)
 	{
-		if (p[i] >'9'	|| p[i] < '0')
+		if (p[i] > '9' && p[i] < '0')
 		{
 			printf("Error\n");
 			exit(98);
