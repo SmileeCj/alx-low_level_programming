@@ -5,9 +5,11 @@
 
 void arg_c(int count);
 void if_digit(char *p);
-
-
-
+void prints(char *st);
+int _atoi(char *p);
+int rev(int n);
+void p_int(int n);
+void print_str(int n);
 /**
 * main - entry program
 * @argc: param 1
@@ -25,13 +27,13 @@ int main(int argc, char **argv)
 	if_digit(argv[1]);
 	if_digit(argv[2]);
 
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[2]);
+	num1 = _atoi(argv[1]);
+	num2 = _atoi(argv[2]);
 
 	result = num1 * num2;
+	print_str(result);
 
-	printf("%d\n", result);
-return (0);
+	return (0);
 }
 
 /**
@@ -45,7 +47,7 @@ void arg_c(int count)
 {
 	if (count != 3)
 	{
-		 printf("Error\n");
+		 prints("Error\n");
 		 exit(98);
 	}
 }
@@ -65,9 +67,92 @@ void if_digit(char *p)
 	{
 		if (p[i] > '9' && p[i] < '0')
 		{
-			printf("Error\n");
+			prints("Error\n");
 			exit(98);
 		}
 	}
+}
 
+/**
+ * prints - print string
+ * @st: param
+ * Description: print string
+ * Return: nothing
+ */
+
+void prints(char *st)
+{
+	int i = 0;
+
+	while (st[i])
+	{
+		_putchar(st[i++]);
+	}
+}
+
+/**
+ * _atoi - convert string to int
+ * @p: param
+ * Description: convert string to int
+ * Return: int
+ */
+
+int _atoi(char *p)
+{
+	int i = 0, res = 0, sign = 1;
+
+	if (p[i] == '-')
+	{
+		sign = -1;
+		i++;
+	}
+
+	while (p[i] != '\0')
+	{
+		res = res * 10 + p[i] - '0';
+		i++;
+	}
+
+	return (res * sign);
+}
+
+
+/**
+ * print_str - print string
+ * @n: param
+ * Description: print string
+ * Return: nothing
+ */
+void print_str(int n)
+{
+	int i = 0, count = 0, num = n, rest = 0;
+	char *p;
+
+	while (num != 0)
+	{
+		num /= 10;
+		count++;
+	}
+	p = malloc(sizeof(char) * (count + 1));
+	if (p == NULL)
+	{
+		printf("memory not reserved");
+		exit(89);
+	}
+	while (i < count)
+	{
+		rest = n % 10;
+		n = n / 10;
+
+		p[i] = rest + '0';
+		i++;
+	}
+	p[i] = '\0';
+
+	for (i = (count - 1); i >= 0; i--)
+	{
+		putchar(p[i]);
+	}
+	putchar('\n');
+	free(p);
 }
