@@ -1,19 +1,17 @@
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h> 
+#include <stdlib.h>
 
 /**
 * main - is entry function
-* @argc: int
-* @argv: array
 * Description: print file name
 * Return: 0 (success)
 */
 
 
-int main()
+int main(void)
 {
-		printf("%s\n",__FILE__);
+		printf("%s\n", __FILE__);
 		return (0);
 
 }
