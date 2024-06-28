@@ -2,21 +2,19 @@
 #define DOG_H
 
 /**
- * struct Dog - type Dog
+ * struct dog - type dog
  * @name: first member
  * @age: second member
  * @owner: third member
  *
- * Description: define new type called Dog
+ * Description: define new type called dog
  */
 
-typedef struct dog dog;
-
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-};
+} dog;
 
 #endif
