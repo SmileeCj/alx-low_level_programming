@@ -10,9 +10,9 @@
  * Description: define new type called Dog
  */
 
-typedef struct dog Dog;
+typedef struct dog dog;
 
-struct Dog
+struct dog
 {
 	char *name;
 	float age;
