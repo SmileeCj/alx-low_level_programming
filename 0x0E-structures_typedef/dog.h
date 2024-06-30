@@ -9,7 +9,6 @@
  *
  * Description: define new type called dog
  */
-
 typedef struct dog
 {
 	char *name;
@@ -17,7 +16,8 @@ typedef struct dog
 	char *owner;
 } dog;
 
-#define dog_t dog
+
+typedef struct dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
