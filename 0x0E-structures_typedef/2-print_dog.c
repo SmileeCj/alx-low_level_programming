@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "dog.h"
-
+#include <stdlib.h>
 /**
 * print_dog - print struct
 * @d: param1
@@ -37,4 +37,6 @@ void print_dog(struct dog *d)
 			printf("%s\n", (*d).owner);
 		}
 	}
+		else
+			exit(0);
 }
