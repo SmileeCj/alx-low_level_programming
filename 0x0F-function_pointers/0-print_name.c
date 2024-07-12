@@ -9,7 +9,7 @@
 *
 * Description: print out a name
 *
-* Return: pointer to a dog_t
+* Return: nothing
 */
 
 void print_name(char *name, void (*f)(char *))
