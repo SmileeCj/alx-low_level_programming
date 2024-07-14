@@ -20,14 +20,14 @@ int main(int argc, char **argv)
 
 	if (argc != 4)
 	{
-		printf("Error98\n");
+		printf("Error\n");
 		exit(98);
 	}
 
 	op_fun = get_op_func(argv[2]);
 	if (!op_fun)
 	{
-		printf("Error98\n");
+		printf("Error\n");
 		exit(99);
 	}
 
@@ -36,7 +36,7 @@ int main(int argc, char **argv)
 
 	if ((*p_sign == '/' || *p_sign == '%') && !num2)
 	{
-		printf("Error100\n");
+		printf("Error\n");
 		exit(100);
 	}
 
