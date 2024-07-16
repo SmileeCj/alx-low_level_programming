@@ -9,7 +9,7 @@
 *
 * Description: print number of args
 *
-* Return: int
+* Return: nothing
 */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
