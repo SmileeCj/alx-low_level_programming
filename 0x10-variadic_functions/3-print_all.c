@@ -17,15 +17,15 @@ void print_all(const char * const format, ...)
 {
 	int i = 0;
 
-	va_list args;
+	va_list args; /* declare va_list type */
 	char *str;
 	char *sep = "";
 
-	va_start(args, format);
+	va_start(args, format); /* starting our list */
 
 	while (format && format[i])
 	{
-		switch (format[i])
+		switch (format[i]) /* switching between chararcters */
 		{
 			case 'i':
 				printf("%s%d", sep, va_arg(args, int));
@@ -47,6 +47,6 @@ void print_all(const char * const format, ...)
 		sep = ", ";
 		i++;
 	}
-	va_end(args);
+	va_end(args); /*ending our arg */
 	printf("\n");
 }
