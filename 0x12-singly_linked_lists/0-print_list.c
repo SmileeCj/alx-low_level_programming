@@ -6,16 +6,17 @@
  * @h: Head
  *
  * Description: string length
- * 
+ *
  * Return: string length
  */
 
 size_t str_len(const list_t *h)
 {
 	size_t i = 0;
-	if(h->str)
+
+	if (h->str)
 	{
-		while(h->str[i])
+		while (h->str[i])
 		{
 			i++;
 		}
