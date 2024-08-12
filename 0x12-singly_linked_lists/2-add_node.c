@@ -20,9 +20,6 @@ list_t *add_node(list_t **head, const char *str)
 	if (new_node == NULL)
 		return (NULL);
 
-	if (*head->str == NULL)
-		return (NULL);
-
 	if (*head == NULL)
 	{
 		*head = new_node;
