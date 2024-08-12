@@ -1,6 +1,31 @@
 #include "lists.h"
 
 /**
+ * str_len - string length
+ *
+ * @h: Head
+ *
+ * Description: string length
+ * 
+ * Return: string length
+ */
+
+size_t str_len(const list_t *h)
+{
+	size_t i = 0;
+	if(h->str)
+	{
+		while(h->str[i])
+		{
+			i++;
+		}
+	}
+
+	return (i);
+}
+
+
+/**
 * print_list - print out a name
 * @h: param1
 *
@@ -23,7 +48,7 @@ size_t print_list(const list_t *h)
 		{
 			printf("[0] (nil)\n");
 		} else
-			printf("[%u] %s\n", h->len, h->str);
+			printf("[%lu] %s\n", str_len(h), h->str);
 
 		h = h->next;
 	}
