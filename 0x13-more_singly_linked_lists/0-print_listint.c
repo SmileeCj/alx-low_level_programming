@@ -14,9 +14,11 @@
 size_t print_listint(const listint_t *h)
 {
 	size_t i = 0;
+
 	if (h)
 	{
 		const listint_t *ptr = NULL;
+
 		ptr = h;
 
 		while (ptr != NULL)
@@ -26,7 +28,6 @@ size_t print_listint(const listint_t *h)
 			ptr = ptr->next;
 		}
 	}
-
 	return (i);
 
 }
