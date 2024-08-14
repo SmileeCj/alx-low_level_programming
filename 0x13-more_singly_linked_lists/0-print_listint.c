@@ -23,7 +23,9 @@ size_t print_listint(const listint_t *h)
 			i++;
 			ptr = ptr->next;
 		}
-
 		return (i);
 	}
+
+	return (0);
+
 }
