@@ -10,7 +10,7 @@
  * Return: string length
  */
 
-size_t str_len(const list_t *h)
+unsigned int str_len(const list_t *h)
 {
 	size_t i = 0;
 
@@ -49,7 +49,9 @@ size_t print_list(const list_t *h)
 		{
 			printf("[0] (nil)\n");
 		} else
-			printf("[%lu] %s\n", str_len(h), h->str);
+		{
+			printf("[%d] %s\n", str_len(h), h->str);
+		}
 
 		h = h->next;
 	}
