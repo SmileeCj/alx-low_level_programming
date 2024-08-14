@@ -1,13 +1,13 @@
 #include "lists.h"
 
 /**
- * print_listint - list length
+ * print_listint - print list
  *
  * @h: Head
  *
- * Description: list length
+ * Description: print list length and data
  *
- * Return: size_t
+ * Return: unsigned
  */
 
 
