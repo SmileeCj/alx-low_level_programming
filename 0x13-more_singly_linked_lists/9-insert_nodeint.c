@@ -10,6 +10,9 @@
 
 unsigned int list_len(listint_t **head)
 {
+	if (head == NULL)
+		return (-1);
+
 	unsigned int len = 0;
 	listint_t *ptr = *head;
 
@@ -36,14 +39,16 @@ unsigned int list_len(listint_t **head)
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
+	if (head == NULL)
+		return (NULL);
+
 	listint_t *new_node = malloc(sizeof(listint_t));
 	listint_t *ptr = *head;
 	listint_t *prev = ptr;
 	unsigned int len = 0, i = 0;
 
 	len = list_len(head);
-
-	if (head == NULL)
+	if (len == -1)
 		return (NULL);
 
 	new_node->n = n;
