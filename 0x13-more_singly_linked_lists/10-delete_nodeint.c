@@ -12,7 +12,7 @@
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	unsigned int length = 0, i = 0;
+	unsigned int i = 0;
 	listint_t *ptr = *head;
 	listint_t *prev = ptr;
 
