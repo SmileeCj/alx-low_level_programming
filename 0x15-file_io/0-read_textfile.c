@@ -8,7 +8,7 @@
  *
  * Description: printing number of bytes
  *
- * Return: 0 (success)
+ * Return: number of bytes
 */
 
 ssize_t read_textfile(const char *filename, size_t letters)
