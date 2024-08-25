@@ -30,20 +30,20 @@ int main(int argc, char **argv)
 	if (fd_to == -1)
 		dprintf(STDERR_FILENO, ERR_WR), _exit(99);
 
-	while ((r_count = read(fd_from, buffer, BUF_S)))
+	while ((r_count = read(fd_from, buffer, BUF_S)) > 0)
 	{
 		w_count = write(fd_to, buffer, r_count);
 		if (w_count != r_count)
 			dprintf(STDERR_FILENO, ERR_WR), _exit(99);
 	}
 
-	if (w_count == -1)
-		dprintf(STDERR_FILENO, ERR_WR), _exit(99);
+	if (r_count == -1)
+		dprintf(STDERR_FILENO, ERR_RD), _exit(98);
 
-	if ((close(fd_to)) == -1)
+	if (close(fd_to) == -1)
 		dprintf(STDERR_FILENO, ERR_CLOSE, fd_to), _exit(100);
 
-	if ((close(fd_from)) == -1)
+	if (close(fd_from) == -1)
 		dprintf(STDERR_FILENO, ERR_CLOSE, fd_from), _exit(100);
 
 	return (0);
