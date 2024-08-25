@@ -24,20 +24,20 @@ int main(int argc, char **argv)
 	fd_from = open(argv[1], O_RDONLY);
 
 	if (fd_from == -1)
-		dprintf(STDERR_FILENO, ERR_RD), _exit(98);
-	fd_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, PERMS);
+		dprintf(STDERR_FILENO, ERR_RD, argv[1]), _exit(98);
+	fd_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 
 	if (fd_to == -1)
-		dprintf(STDERR_FILENO, ERR_WR), _exit(99);
+		dprintf(STDERR_FILENO, ERR_WR, argv[2]), _exit(99);
 
 	while ((r_count = read(fd_from, buffer, BUF_S)) > 0)
 	{
 		if (write(fd_to, buffer, r_count) != r_count)
-			dprintf(STDERR_FILENO, ERR_WR), _exit(99);
+			dprintf(STDERR_FILENO, ERR_WR, argv[2]), _exit(99);
 	}
 
 	if (r_count == -1)
-		dprintf(STDERR_FILENO, ERR_RD), _exit(98);
+		dprintf(STDERR_FILENO, ERR_RD, argv[1]), _exit(98);
 
 	if (close(fd_to) == -1)
 		dprintf(STDERR_FILENO, ERR_CLOSE, fd_to), _exit(100);
