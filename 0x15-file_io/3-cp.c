@@ -14,7 +14,7 @@
 int main(int argc, char **argv)
 {
 	int fd_from = -1, fd_to = -1;
-	ssize_t w_count = 0, r_count = 0;
+	ssize_t r_count = 0;
 	char buffer[BUF_S] = {0};
 
 	if (argc != 3)
